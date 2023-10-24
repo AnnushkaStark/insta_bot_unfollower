@@ -9,9 +9,9 @@ target = []
 get_target(target)
 bot = Bot()
 bot.login(username = user, password = password )
-followers = bot.get_user_followers(target)
 counter = len(target)
-for follower in followers:
+for follower in target:
+    bot.get_user_followers(follower)
     bot.unfollow(follower)
     time.sleep(random.randrange(5-10))
     delet_target(follower)
