@@ -1,7 +1,7 @@
 # В этом файле запросы для базы данны #
 import sqlite3 as sql
 querry_add_accounts = '''INSERT INTO unfollowers (username,insta_id,link,category) VALUES (?,?,?,?)''' # Запрос добавляет аккаунты в базу данных
-querry_get_targets = '''SELECT insta_id,  FROM unfollowers'''# Запрос выводит целевые аккаунты в бот
+querry_get_targets = '''SELECT insta_id  FROM unfollowers'''# Запрос выводит целевые аккаунты в бот
 querry_del_target = '''DELETE FROM unfollowers WHERE insta_id LIKE ?'''#Запрос удалаяте аккаунты из базы данных после отписки
 
 
