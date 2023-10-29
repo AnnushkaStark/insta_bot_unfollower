@@ -48,7 +48,7 @@ try:
     button = browser.find_element(by=By.XPATH,value="//button[text()= 'Не сейчас']")
     button.click()
     time.sleep(30)
-    browser.get('https://www.instagram.com/Zaceni_pricoll/followers/') 
+    browser.get('https://www.instagram.com/Zaceni_pricoll/followers/') #вот тут между знаками слэш вместо Zaceni_pricoll вписатьимяпользователя от которого нужно отписать подписчиков 
     time.sleep(50)
     follower = browser.find_element(by=By.CSS_SELECTOR,value= 'body > div.x1n2onr6.xzkaem6 > div.x9f619.x1n2onr6.x1ja2u2z > div > div.x1uvtmcs.x4k7w5x.x1h91t0o.x1beo9mf.xaigb6o.x12ejxvf.x3igimt.xarpa2k.xedcshv.x1lytzrv.x1t2pt76.x7ja8zs.x1n2onr6.x1qrby5j.x1jfb8zj > div > div > div')
     time.sleep(30)
