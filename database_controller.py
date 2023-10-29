@@ -1,8 +1,8 @@
 # В этом файле запросы для базы данны #
 import sqlite3 as sql
 querry_add_accounts = '''INSERT INTO trash_accounts (username,insta_id,link,category) VALUES (?,?,?,?)''' # Запрос добавляет аккаунты в базу данных
-querry_get_targets = '''SELECT insta_id  FROM trash_accounts'''# Запрос выводит целевые аккаунты в бот
-querry_del_target = '''DELETE FROM  trash_accounts WHERE insta_id LIKE ?'''#Запрос удалаяте аккаунты из базы данных после отписки
+querry_get_targets = '''SELECT username  FROM trash_accounts'''# Запрос выводит целевые аккаунты в бот
+querry_del_target = '''DELETE FROM  trash_accounts WHERE username LIKE ?'''#Запрос удалаяте аккаунты из базы данных после отписки
 
 
 def add_accounts(a,b,c,d):
